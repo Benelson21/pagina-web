@@ -2,26 +2,32 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Minha Landing Page</title>
+  <title>Landing Page Moderna</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
       color: #333;
     }
     header {
-      background: #0077cc;
+      background: url('https://picsum.photos/1200/400?blur') no-repeat center center;
+      background-size: cover;
       color: white;
-      padding: 40px 20px;
+      padding: 80px 20px;
       text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     }
     header h1 {
+      font-size: 3em;
       margin: 0;
-      font-size: 2.5em;
+    }
+    header p {
+      font-size: 1.3em;
+      margin-top: 10px;
     }
     .container {
-      padding: 40px 20px;
+      padding: 50px 20px;
       text-align: center;
     }
     .container h2 {
@@ -29,8 +35,8 @@
       margin-bottom: 20px;
     }
     .container p {
-      font-size: 1.2em;
-      max-width: 600px;
+      font-size: 1.1em;
+      max-width: 700px;
       margin: 0 auto 30px;
     }
     .btn {
@@ -41,16 +47,42 @@
       font-size: 1em;
       border-radius: 5px;
       transition: background 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
     .btn:hover {
       background: #005fa3;
+    }
+    form {
+      margin-top: 40px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
     }
     footer {
       background: #222;
       color: #aaa;
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
       font-size: 0.9em;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      color: #aaa;
+      text-decoration: none;
+      font-size: 1.4em;
+      transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #fff;
     }
   </style>
 </head>
@@ -63,12 +95,25 @@
 
   <div class="container">
     <h2>Conheça Nosso Projeto</h2>
-    <p>Este é um exemplo de landing page com estilos embutidos no próprio HTML. Ideal para projetos simples, rápidos e sem dependência de arquivos externos.</p>
+    <p>Este é um exemplo de landing page com estilos embutidos no próprio HTML. Agora com visual moderno, formulário de contato e ícones sociais para engajar ainda mais.</p>
     <a href="#contato" class="btn">Fale Conosco</a>
+
+    <form id="contato">
+      <h3>Entre em contato</h3>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
   </div>
 
   <footer>
-    &copy; 2025 - Todos os direitos reservados
+    <div class="social-icons">
+      <a href="#" title="Facebook">📘</a>
+      <a href="#" title="Instagram">📸</a>
+      <a href="#" title="LinkedIn">💼</a>
+    </div>
+    <p>&copy; 2025 - Todos os direitos reservados</p>
   </footer>
 
 </body>
